@@ -35,13 +35,13 @@ public class ICMReportsPage extends BasePage {
     @FindBy(how = How.CSS, using = "#ui-id-5")
     protected WebElement elmntCertificationHistorySOP;
 
-    @FindBy(how = How.CSS, using = "td[title='No data available in table']")
+    @FindBy(how = How.XPATH, using = "//a[normalize-space()='Current Certifications']")
     protected WebElement tblValueCurrentCertificationSOP;
 
-    @FindBy(how = How.XPATH, using = "(//td[@class='dataTables_empty'])[2]")
+    @FindBy(how = How.XPATH, using = "//a[normalize-space()='Expired Certifications']")
     protected WebElement tblValueExpiredCertificationSOP;
 
-    @FindBy(how = How.CSS, using = "td[class='sorting_1']")
+    @FindBy(how = How.XPATH, using = "//a[normalize-space()='Certification History']")
     protected WebElement tblValueCertificationHistorySOP;
 
 
@@ -57,13 +57,13 @@ public class ICMReportsPage extends BasePage {
     @FindBy(how = How.CSS, using = "#ui-id-8")
     protected WebElement elmntCertificationHistoryPolicy;
 
-    @FindBy(how = How.XPATH, using = "(//td[@title='No data available in table'])[3]")
+    @FindBy(how = How.XPATH, using = "//a[@id='ui-id-6']")
     protected WebElement tblValueCurrentCertificationPolicy;
 
-    @FindBy(how = How.XPATH, using = "(//td[text()='No data available in table'])[4]")
+    @FindBy(how = How.XPATH, using = "//a[@id='ui-id-7']")
     protected WebElement tblValueExpiredCertificationPolicy;
 
-    @FindBy(how = How.XPATH, using = "(//td[text()='No data available in table'])[5]")
+    @FindBy(how = How.XPATH, using = "//a[@id='ui-id-8']")
     protected WebElement tblValueCertificationHistoryPolicy;
 
     @FindBy(how = How.XPATH, using = "//a[normalize-space()='Approval List']")
@@ -78,13 +78,13 @@ public class ICMReportsPage extends BasePage {
     @FindBy(how = How.CSS, using = "#SopCurrentLink")
     protected WebElement elmntCurrentApprovalListSOP;
 
-    @FindBy(how = How.XPATH, using = "(//td[text()='No data available in table'])[1]")
+    @FindBy(how = How.XPATH, using = "//a[normalize-space()='Current Approval List - SOP']")
     protected WebElement tblValueCurrentApprovalListSOP;
 
     @FindBy(how = How.CSS, using = "#SopHistoryLink")
     protected WebElement elmntApprovalListHistorySOP;
 
-    @FindBy(how = How.XPATH, using = "(//td[text()='No data available in table'])[2]")
+    @FindBy(how = How.XPATH, using = "//a[normalize-space()='Approval List History - SOP']")
     protected WebElement tblValueApprovalListHistorySOP;
 
     @FindBy(how = How.CSS, using = "#PolicyMain")
@@ -93,13 +93,13 @@ public class ICMReportsPage extends BasePage {
     @FindBy(how = How.CSS, using = "#PolicyCurrentLink")
     protected WebElement elmntCurrentApprovalListPolicy;
 
-    @FindBy(how = How.XPATH, using = "(//td[text()='No data available in table'])[3]")
+    @FindBy(how = How.XPATH, using = "//a[normalize-space()='Current Approval List - Policy']")
     protected WebElement tblValueCurrentApprovalListPolicy;
 
     @FindBy(how = How.CSS, using = "#PolicyHistoryLink")
     protected WebElement elmntApprovalListHistoryPolicy;
 
-    @FindBy(how = How.XPATH, using = "(//td[text()='No data available in table'])[4]")
+    @FindBy(how = How.XPATH, using = "//a[normalize-space()='Approval List History - Policy']")
     protected WebElement tblValueApprovalListHistoryPolicy;
 
     @FindBy(how = How.CSS, using = "#TestMain")
@@ -108,13 +108,13 @@ public class ICMReportsPage extends BasePage {
     @FindBy(how = How.CSS, using = "#TestCurrentLink")
     protected WebElement elmntCurrentApprovalListTest;
 
-    @FindBy(how = How.XPATH, using = "//a[normalize-space()='FCRA']")
+    @FindBy(how = How.XPATH, using = "//a[normalize-space()='Current Approval List - Test']")
     protected WebElement tblValueCurrentApprovalListTest;
 
     @FindBy(how = How.CSS, using = "#TestHistoryLink")
     protected WebElement elmntApprovalListHistoryTest;
 
-    @FindBy(how = How.XPATH, using = "(//td[text()='No data available in table'])[5]")
+    @FindBy(how = How.XPATH, using = "//a[normalize-space()='Approval List History - Test']")
     protected WebElement tblValueApprovalListHistoryTest;
 
     @FindBy(how = How.XPATH, using = "//a[normalize-space()='Audit Summary Reports']")

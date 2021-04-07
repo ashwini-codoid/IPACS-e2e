@@ -68,6 +68,9 @@ public class ICMComplaintDisputeMgmtPage extends BasePage {
     @FindBy(how = How.XPATH, using = "//a[text()='Complaint/Dispute Log Set Up']")
     protected WebElement elmntComplaintDisputeLogSetUp;
 
+    @FindBy(how = How.ID, using = "CompliantLog_link")
+    protected WebElement tabComplaintsDisputesMgmtSectionICM;
+
     @FindBy(how = How.ID, using = "savedtemplateattributebtn")
     protected WebElement btnComplaintDisputeLogSetUp;
 
@@ -150,6 +153,11 @@ public class ICMComplaintDisputeMgmtPage extends BasePage {
     }
     public void clickComplaintDisputeLogSetUp() {
         click(waitForElement(elmntComplaintDisputeLogSetUp));
+    }
+
+    public void clickComplaintsDisputesMgmtSectionICM() {
+        jsScrollDown();
+        click(waitForElement(tabComplaintsDisputesMgmtSectionICM));
     }
     public boolean verifyComplaintDisputeLogSetUp() {
         waitForElement(btnComplaintDisputeLogSetUp);

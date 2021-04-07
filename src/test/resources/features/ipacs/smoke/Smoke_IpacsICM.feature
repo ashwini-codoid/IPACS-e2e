@@ -1,6 +1,6 @@
 Feature: Validating IPACS ICM Functionality
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validate IPACS User Login
 
     Given I am on IPACS application
@@ -12,7 +12,7 @@ Feature: Validating IPACS ICM Functionality
       | &PARTNERCODE& | &USERNAME& | &PASSWORD& |
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating IPACS Home tab
 
     Given I am on IPACS main navigation
@@ -24,7 +24,7 @@ Feature: Validating IPACS ICM Functionality
       | Home |
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating IPACS Company Profile tab
 
     Given I am on IPACS main navigation
@@ -36,7 +36,7 @@ Feature: Validating IPACS ICM Functionality
       | Company Profile |
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Master List-SOPs tab
 
     Given I am on IPACS main navigation
@@ -47,7 +47,7 @@ Feature: Validating IPACS ICM Functionality
       | MasterListSOP      |
       | Master List - SOPs |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Master List-Policies tab
 
     Given I am on IPACS main navigation
@@ -60,7 +60,7 @@ Feature: Validating IPACS ICM Functionality
 
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Master List - Clients Link
 
     Given I am on IPACS Home Page
@@ -72,7 +72,7 @@ Feature: Validating IPACS ICM Functionality
       | Master List - Clients  |
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating View Master List under Master List - Clients
 
     Given I click <MasterListClients> tab
@@ -84,7 +84,7 @@ Feature: Validating IPACS ICM Functionality
       | Master List - Clients  |
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Add Network Client under Master List - Clients
 
     Given I am on Master List - Clients details Page
@@ -97,7 +97,7 @@ Feature: Validating IPACS ICM Functionality
       | Master List - Clients  |
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Add Client/Direct Placer under Master List - Clients
 
     Given I am on the Add Network Client Page
@@ -110,7 +110,7 @@ Feature: Validating IPACS ICM Functionality
       | Master List - Clients  |
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Add Risk Factor under Master List - Clients
 
     Given I am on the Add Client/Direct Placer Page
@@ -127,7 +127,7 @@ Feature: Validating IPACS ICM Functionality
 
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Documents Link
 
     Given I am on IPACS Home Page
@@ -138,7 +138,7 @@ Feature: Validating IPACS ICM Functionality
       | Documents   |
       | Documents   |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Add Document - SOP under Documents
 
     Given I click <Documents> tab
@@ -150,7 +150,7 @@ Feature: Validating IPACS ICM Functionality
       | Documents   |
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Add Document - Attachment under Documents
 
     Given I am on Add Document - SOP Page
@@ -163,14 +163,14 @@ Feature: Validating IPACS ICM Functionality
       | Documents   |
 
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Attachment At Policy Section under Documents
 
     Given I am on Add Document - Attachment page
     When I click Attachment At Policy Section
     Then  I should see the Attachment At Policy page
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Add Document - Policy under Documents
 
     Given I am on the Attachment At Policy page
@@ -182,7 +182,7 @@ Feature: Validating IPACS ICM Functionality
       | Documents   |
       | Documents   |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Add Document - Client Manual under Documents
 
     Given I am on the Add Document - Policy page
@@ -194,7 +194,7 @@ Feature: Validating IPACS ICM Functionality
       | Documents   |
       | Documents   |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Add Cover Page, Header & Footer under Documents
 
     Given I am on Add Document - Client Manual page
@@ -206,7 +206,7 @@ Feature: Validating IPACS ICM Functionality
       | Documents   |
       | Documents   |
 
-  @Smoke
+  @NavSmoke
   Scenario: validating Header & Footer under Documents
 
     Given I am on the Add Cover Page
@@ -214,7 +214,7 @@ Feature: Validating IPACS ICM Functionality
     Then I should see the Header & Footer page
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating View Approval List under Documents
 
     Given I am on the Header & Footer page
@@ -226,7 +226,7 @@ Feature: Validating IPACS ICM Functionality
       | Documents   |
       | Documents   |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Document Dashboard under Documents
 
     Given I am on the View Approval List page
@@ -238,7 +238,7 @@ Feature: Validating IPACS ICM Functionality
       | Documents   |
       | Documents   |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Document Repository under Documents
 
     Given I am on the Add Document - Document Dashboard page
@@ -251,7 +251,7 @@ Feature: Validating IPACS ICM Functionality
       | Documents   |
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Mass Download under Documents
 
     Given I am on the Document Repository page
@@ -263,14 +263,14 @@ Feature: Validating IPACS ICM Functionality
       | Documents   |
       | Documents   |
 
-  @Smoke
+  @NavSmoke
   Scenario: validating Policy Mass Download under Documents
 
     Given I am on SOP section in Mass Download page
     When I click Policy section
     Then I should see the Policy section in Mass Download page
 
-  @Smoke
+  @NavSmoke
   Scenario: validating Policy Mass Download under Documents
 
     Given I am on Policy section in Mass Download page
@@ -282,7 +282,7 @@ Feature: Validating IPACS ICM Functionality
 
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Assign SOPs and Policies Link
 
     Given I am on IPACS Home Page
@@ -293,7 +293,7 @@ Feature: Validating IPACS ICM Functionality
       | Assign SOPs and Policies  |
       | Assign SOPs / Policies    |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Assign SOP under Assign SOPs and Policies link
 
     Given I click <Assign SOPs and Policies> tab
@@ -304,7 +304,7 @@ Feature: Validating IPACS ICM Functionality
       | Assign SOPs and Policies  |
       | Assign SOPs / Policies    |
 
-  @Smoke
+  @NavSmoke
   Scenario: validating Assign Policies under Assign SOPs and Policies link
 
     Given I am on SOP section under Assign User to SOP/Policies page
@@ -316,7 +316,7 @@ Feature: Validating IPACS ICM Functionality
 
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Reports Link
 
     Given I am on IPACS Home Page
@@ -327,7 +327,7 @@ Feature: Validating IPACS ICM Functionality
       | Reports  |
       | Reports  |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Certification under Reports
 
     Given I click <Reports> tab
@@ -338,14 +338,14 @@ Feature: Validating IPACS ICM Functionality
       | Reports  |
       | Reports  |
 
-  @Smoke
+  @NavSmoke
   Scenario: validating Current Certification Section under SOP tab
 
     Given I am on View Certification -Reports page
     When  I click SOP tab under Current Certification
     Then  I should see the Current Certification page under SOP
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Expired Certification Section under SOP tab
 
     Given I am on View Certification -Reports page
@@ -353,7 +353,7 @@ Feature: Validating IPACS ICM Functionality
     When I click Expired Certification Section
     Then  I should see the Expired Certification page under SOP
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Certification History Section under SOP tab
 
     Given I am on View Certification -Reports page
@@ -361,7 +361,7 @@ Feature: Validating IPACS ICM Functionality
     When I click Certification History Section
     Then  I should see the Certification History Section page under SOP
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Current Certification Section under Policy tab
 
     Given I am on View Certification -Reports page
@@ -369,7 +369,7 @@ Feature: Validating IPACS ICM Functionality
     When I click Current Certification Section under Policy
     Then  I should see the Current Certification page under Policy
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Expired Certification Section under Policy tab
 
     Given I am on View Certification -Reports page
@@ -377,7 +377,7 @@ Feature: Validating IPACS ICM Functionality
     When I click Expired Certification Section under Policy
     Then  I should see the Expired Certification page under Policy
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Certification History Section under Policy tab
 
     Given I am on View Certification -Reports page
@@ -385,7 +385,7 @@ Feature: Validating IPACS ICM Functionality
     When I click Certification History Section under Policy
     Then  I should see the Certification History page under Policy
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Approval List Reports
 
     Given I am on the Certification History page under Policy
@@ -397,14 +397,14 @@ Feature: Validating IPACS ICM Functionality
       | Reports  |
       | Reports  |
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Current Approval list Section under SOP tab
 
     Given  I am on View Approval List-Reports page
     When I click SOP under Approval List Reports
     Then I should see the Current Approval list Section page under SOP
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Approval list History Section under SOP tab
 
     Given I am on View Approval List-Reports page
@@ -412,14 +412,14 @@ Feature: Validating IPACS ICM Functionality
     When I click Approval list History Section
     Then I should see the Approval list History Section page under SOP
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Current Approval list Section under policy tab
 
     Given I am on View Approval List-Reports page
     When I click Policy under Approval List Reports
     Then I should see the Current Approval list Section page under Policy
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Approval list History Section under Policy tab
 
     Given I am on View Approval List-Reports page
@@ -427,14 +427,14 @@ Feature: Validating IPACS ICM Functionality
     When I click Approval list History Section under policy
     Then I should see the Approval list History Section page under Policy
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Current Approval list Section under Test tab
 
     Given I am on View Approval List-Reports page
     When I click Test under Approval List Reports
     Then I should see the Current Approval list Section page Under Test
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Approval list History Section under Test tab
 
     Given I am on View Approval List-Reports page
@@ -442,7 +442,7 @@ Feature: Validating IPACS ICM Functionality
     When I click Approval list History Section under test
     Then I should see the Approval list History Section page under Test
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Audit Summary-Reports under Reports
 
     Given I am on the Approval list History Section page under Test Page
@@ -454,14 +454,14 @@ Feature: Validating IPACS ICM Functionality
       | Reports  |
       | Reports  |
 
-  @Smoke
+  @NavSmoke
   Scenario: Validate External Audit tab under Audit Summary-Reports
 
     Given I am on  Audit Summary-Reports
     When I click External Audit tab under Audit Summary-Reports
     Then I should see External Audit page under Audit Summary-Reports
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Employee Report under Reports
 
     Given I am on the External Audit page under Audit Summary-Reports
@@ -474,7 +474,7 @@ Feature: Validating IPACS ICM Functionality
       | Reports  |
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Employee Test History Report under Reports
 
     Given I am on the see Employee Report page
@@ -487,7 +487,7 @@ Feature: Validating IPACS ICM Functionality
       | Reports  |
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Company Test History Report under Reports
 
     Given I am on the Employee Test History Report page
@@ -499,7 +499,7 @@ Feature: Validating IPACS ICM Functionality
       | Reports  |
       | Reports  |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Passing Score Test Report under Reports
 
     Given I am on the see Company Test History Report page
@@ -511,7 +511,7 @@ Feature: Validating IPACS ICM Functionality
       | Reports  |
       | Reports  |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Test Questions & Responses Report under Reports
 
     Given I am on the Passing Score Test Report page
@@ -523,7 +523,7 @@ Feature: Validating IPACS ICM Functionality
       | Reports  |
       | Reports  |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Vendor Document Status Report under Reports
 
     Given I am on the Test Questions & Responses Report page
@@ -535,7 +535,7 @@ Feature: Validating IPACS ICM Functionality
       | Reports  |
       | Reports  |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Vendor Details Report under Reports
 
     Given I am on the Vendor Document Status Report page
@@ -547,7 +547,7 @@ Feature: Validating IPACS ICM Functionality
       | Reports  |
       | Reports  |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Trend Analysis of Non-Conformities under Reports
 
     Given I am on the Vendor Details Report page
@@ -564,7 +564,7 @@ Feature: Validating IPACS ICM Functionality
 
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Admin Section Link
 
     Given I am on IPACS Home Page
@@ -575,7 +575,7 @@ Feature: Validating IPACS ICM Functionality
       | AdminSection  |
       | Admin Section |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Add New User via Admin Section
 
     Given I click <AdminSection> tab
@@ -586,7 +586,7 @@ Feature: Validating IPACS ICM Functionality
       | AdminSection  |
       | Admin Section |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Edit User via Admin Section
 
     Given I am on the Add New User page
@@ -598,7 +598,7 @@ Feature: Validating IPACS ICM Functionality
       | AdminSection  |
       | Admin Section |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Add Title via Admin Section
 
     Given I am on the Edit User page
@@ -610,7 +610,7 @@ Feature: Validating IPACS ICM Functionality
       | AdminSection  |
       | Admin Section |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Edit Title via Admin Section
 
     Given I am on the Add Title page
@@ -622,7 +622,7 @@ Feature: Validating IPACS ICM Functionality
       | AdminSection  |
       | Admin Section |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating IPACS Administration via Admin Section
 
     Given I am on the Edit Title page
@@ -634,140 +634,140 @@ Feature: Validating IPACS ICM Functionality
       | AdminSection  |
       | Admin Section |
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating User logs Section under IPACS Administration
 
     Given I am on IPACS Administration page
     When I click User logs
     Then I should verify the User logs under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating User login History under IPACS Administration
 
     Given I am on IPACS Administration page
     When I click User login History
     Then I should verify the User login History under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Locked tests under IPACS Administration
 
     Given I am on IPACS Administration page
     When I click Locked tests
     Then I should verify the Locked tests under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Manage object under IPACS Administration
 
     Given I am on IPACS Administration page
     When I click Manage objects
     Then I should verify the Manage objects under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Delete SOP Manage objects under IPACS Administration
 
     Given I am on Manage objects Sub-module under IPACS Administration page
     When I click Delete SOP section
     Then I should verify the Delete SOP Manage objects under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Delete Policy Manage objects under IPACS Administration
 
     Given I am on Delete SOP Manage objects under IPACS Administration page
     When I click Delete Policy section
     Then I should verify the Delete Policy Manage object under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Delete Client Manage objects under IPACS Administration
 
     Given I am on Delete Policy Manage object under IPACS Administration page
     When I click Delete Client section
     Then I should verify the Delete Client Manage objects under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Delete Employee Test Course Manage objects under IPACS Administration
 
     Given I am on Delete Client Manage objects under IPACS Administration page
     When I click Delete Employee Test Course section
     Then I should verify the Delete Employee Test Course Manage objects under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Delete Vendor Manage objects under IPACS Administration
 
     Given I am on Delete Employee Test Course Manage objects under IPACS Administration page
     When I click Delete Vendor section
     Then I should verify the Delete Vendor Manage objects under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Access Control under IPACS Administration
 
     Given I am on IPACS Administration page
     When I click Access Control
     Then I should verify the Access Control under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Printing  Access Control under IPACS Administration
 
     Given I am on Access Control Sub-module under IPACS Administration page
     When I click Printing section
     Then I should verify the Printing Access Control under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating IP Restriction Access Control under IPACS Administration
 
     Given I am on Printing Access Control under IPACS Administration page
     When I click IP Restriction section
     Then I should verify the IP Restriction Access Control under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Logo Access Control under IPACS Administration
 
     Given I am on IP Restriction Access Control under IPACS Administration page
     When I click Logo section
     Then I should verify the Logo Access Control under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Training Materials Access Control under IPACS Administration
 
     Given I am on Logo Access Control under IPACS Administration page
     When I click Training Materials section
     Then I should verify the Training Materials Access Control under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Documents Certification Access Control under IPACS Administration
 
     Given I am on Training Materials Access Control under IPACS Administration page
     When I click Documents Certification section
     Then I should verify the Documents Certification Access Control under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Notification Settings under IPACS Administration
 
     Given I am on IPACS Administration page
     When I click Notification Settings
     Then I should verify the Notification Settings under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Send User Passwords under IPACS Administration
 
     Given I am on IPACS Administration page
     When I click Send User Passwords
     Then I should verify the Send User Passwords under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating IPACS Usage Report under IPACS Administration
 
     Given I am on IPACS Administration page
     When I click IPACS Usage Report
     Then I should verify the IPACS Usage Report under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Alert Settings under IPACS Administration
 
     Given I am on IPACS Administration page
     When I click IPACS Alert Settings
     Then I should verify the Alert Settings under IPACS Administration page
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Automated User Creation
 
     Given I am on the IPACS Administration page
@@ -783,7 +783,7 @@ Feature: Validating IPACS ICM Functionality
 
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: IPACS user verify Internal Audit page after clicking the option from Audit and compliance tab
 
     Given I am on IPACS Home Page
@@ -794,42 +794,42 @@ Feature: Validating IPACS ICM Functionality
       | AuditAndCompliance   | InternalAudit |
       | Audit and Compliance | Internal Audit|
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user validate Audit profile under Internal audit
 
     Given I am on Internal Audit page
     When I click on Audit profile Tab
     Then I should verify the Audit Profile Tab under Internal Audit page
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user validate Audit management under Internal audit
 
     Given I am on Internal Audit page
     When I click on Audit Management Tab
     Then I should verify the Audit Management Tab under Internal Audit page
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user validate Audit Document under Internal audit
 
     Given I am on Internal Audit page
     When I click on Audit Documents Tab
     Then I should verify the Audit Documents Tab under Internal Audit page
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user validate Scorecard Template under Internal audit
 
     Given I am on Internal Audit page
     When I click on Scorecard Template Tab
     Then I should verify the Scorecard Template Tab under Internal Audit page
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user validate Scorecard Analysis under Internal audit
 
     Given I am on Internal Audit page
     When I click on Scorecard Analysis Tab
     Then I should verify the Scorecard Analysis Tab under Internal audit page
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: IPACS user verify External Audit page after clicking the option from Audit and compliance tab
 
     Given I am the Scorecard Analysis Tab under Internal audit page
@@ -840,21 +840,21 @@ Feature: Validating IPACS ICM Functionality
       | AuditAndCompliance   | ExternalAudit |
       | Audit and Compliance | External Audit|
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user Validate Company data for audit under External audit
 
     Given I am on External Audit page
     When I click on Company data for Audit Tab
     Then I should verify the Company Data for Audit Tab under External Audit page
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user Validate Client audits under External audit
 
     Given I am on External Audit page
     When I click on Client Audits Tab
     Then I should verify the Client Audits under External Audit page
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user Validate Client audits under External audit
 
     Given I am on External Audit page
@@ -862,7 +862,7 @@ Feature: Validating IPACS ICM Functionality
     When I click Questionnaire
     Then I should verify the Questionnaire under External audit
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user Validate Add new audit type under External audit
 
     Given I am on External Audit page
@@ -870,7 +870,7 @@ Feature: Validating IPACS ICM Functionality
     When I click Add New Audit Type
     Then I should verify the Add New Audit Type under External audit
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user Validate Audit management under External audit
 
     Given I am on External Audit page
@@ -878,7 +878,7 @@ Feature: Validating IPACS ICM Functionality
     When I click Audit Management
     Then I should verify the Audit Management under External audit
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user Validate Audit Documents under External audit
 
     Given I am on External Audit page
@@ -886,7 +886,7 @@ Feature: Validating IPACS ICM Functionality
     When I click Audit Documents
     Then I should verify the Audit Documents under External audit
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: IPACS user validate Non-Conformity and corrective action
 
     Given I am on the Audit Documents under External audit page
@@ -897,28 +897,28 @@ Feature: Validating IPACS ICM Functionality
       | AuditAndCompliance   | Non-ConformityAndCorrectiveAction |
       | Audit and Compliance | Non-Conformity And Corrective Action |
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user Validate Non-Conformity log under Non-Conformity and Corrective Action
 
     Given I am on Non-Conformity and Corrective Action page
     When I click Non-Conformity log
     Then I should verify the Non-Conformity log under Non-Conformity and Corrective Action page
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user Validate Add Non-Conformity under Non-Conformity and Corrective Action
 
     Given I am on Non-Conformity and Corrective Action page
     When I click Add Non-Conformity
     Then I should verify the Add Non-Conformity under Non-Conformity and Corrective Action page
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user Validate Corrective Action under Non-Conformity and Corrective Action
 
     Given I am on Non-Conformity and Corrective Action page
     When I click Corrective Action
     Then I should verify the Corrective Action under Non-Conformity and corrective Action page
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: IPACS user Validate Client Issue
 
     Given I am on the Corrective Action under Non-Conformity and corrective Action page
@@ -929,14 +929,14 @@ Feature: Validating IPACS ICM Functionality
       | AuditAndCompliance   | ClientIssue |
       | Audit and Compliance | Client Issue|
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user Validate Client Issue log under Client Issue
 
     Given I am on Client Issue page
     When I click Client Issue log
     Then I should verify the Client Issue log under Client Issue page
 
-  @Smoke
+  @NavSmoke
   Scenario: IPACS user Validate Client Issue log under Client Issue
 
     Given I am on Client Issue page
@@ -949,7 +949,7 @@ Feature: Validating IPACS ICM Functionality
 
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Employee and Training Link
 
     Given I am on IPACS Home Page
@@ -959,7 +959,7 @@ Feature: Validating IPACS ICM Functionality
       | EmployeeAndTraining  |
       | Employee and Training|
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Employee
 
     Given I click <EmployeeAndTraining> tab
@@ -969,14 +969,14 @@ Feature: Validating IPACS ICM Functionality
       | EmployeeAndTraining  |
       | Employee and Training|
 
-  @Smoke
+  @NavSmoke
   Scenario: validating Tests and Assignments under Employee
 
     Given I am on user profile page
     When I click Tests and Assignments
     Then  I should verify the Tests and Assignments under User page
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Test course profile
 
     Given I am on the Tests and Assignments under User page
@@ -988,28 +988,28 @@ Feature: Validating IPACS ICM Functionality
       | Employee and Training|
 
 
-  @Smoke
+  @NavSmoke
   Scenario: validating Training Material under Test course profile
 
     Given I am on Test profile page
     When I click Training Material
     Then  I should verify the Training Material page
 
-  @Smoke
+  @NavSmoke
   Scenario: validating Edit Test Profile under Test course profile
 
     Given I am on Training Material page
     When I click Edit Test Profile
     Then  I should verify the Edit Test Profile page
 
-  @Smoke
+  @NavSmoke
   Scenario: validating Create Edit Questions under Test course profile
 
     Given I am on Edit Test Profile page
     When I click Create Edit Questions
     Then  I should verify the Create Edit Questions page
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: validating Add Test course
 
     Given I am on the Create Edit Questions page
@@ -1025,7 +1025,7 @@ Feature: Validating IPACS ICM Functionality
 
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating vendor management Link
 
     Given I am on IPACS Home Page
@@ -1036,7 +1036,7 @@ Feature: Validating IPACS ICM Functionality
       | Vendor Management |
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating  View master list under Vendor management
 
     Given I click <VendorManagement> tab
@@ -1046,7 +1046,7 @@ Feature: Validating IPACS ICM Functionality
       | VendorManagement  |
       | Vendor Management |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Add vendor under Vendor management
 
     Given I am on the Master List- Vendor page
@@ -1058,14 +1058,14 @@ Feature: Validating IPACS ICM Functionality
       | Vendor Management |
 
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Documentation under Add vendor
 
     Given I am on Add vendor page
     When I click Documentation under Vendor management
     Then I should see the Documentation page
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Add vendor category under Vendor management
 
     Given I am on the Documentation page
@@ -1081,7 +1081,7 @@ Feature: Validating IPACS ICM Functionality
 
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Complaints Disputes Mgmt Link
 
     Given I am on IPACS Home Page
@@ -1091,7 +1091,7 @@ Feature: Validating IPACS ICM Functionality
       | ComplaintsDisputesMgmt  |
       | Complaints/Disputes Mgmt|
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Add Complaint via Complaints Disputes Mgmt
 
     Given I click <ComplaintsDisputesMgmt> tab
@@ -1101,7 +1101,7 @@ Feature: Validating IPACS ICM Functionality
       | ComplaintsDisputesMgmt  |
       | Complaints/Disputes Mgmt|
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Complaints Disputes Log via Complaints Disputes Mgmt
 
     Given I am on the Add Complaint page
@@ -1112,14 +1112,14 @@ Feature: Validating IPACS ICM Functionality
       | ComplaintsDisputesMgmt  |
       | Complaints/Disputes Mgmt|
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Imported Records via Complaints Disputes Mgmt
 
     Given I am on Complaints Disputes Log page
     When I click Imported Records
     Then I should see Imported Records page
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Client Specific Log via Complaints Disputes Mgmt
 
     Given I am on the Imported Records page
@@ -1130,28 +1130,28 @@ Feature: Validating IPACS ICM Functionality
       | ComplaintsDisputesMgmt  |
       | Complaints/Disputes Mgmt|
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Add Edit Template under Client Specific Log
 
     Given I am on Complaint Log Setup page
     When I click Add Edit Template
     Then I should see Add Edit Template page under Client Specific Log
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Manage Template under Client Specific Log
 
     Given I am on Add Edit Template page under Client Specific Log
     When I click Manage Template
     Then I should see Manage Template page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Client Specific Complaint Instructions under Client Specific Log
 
     Given I am on Manage Template page
     When I click Client Specific Complaint Instructions
     Then I should see Client Specific Complaint Instructions page
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Import Complaints Disputes via Complaints Disputes Mgmt
 
     Given I am on the Client Specific Complaint Instructions page
@@ -1162,25 +1162,22 @@ Feature: Validating IPACS ICM Functionality
       | ComplaintsDisputesMgmt  |
       | Complaints/Disputes Mgmt|
 
-  @Smoke
-  Scenario Outline: Validating Complaint Dispute Set Up via Complaints Disputes Mgmt
+  @NavSmoke
+  Scenario: Validating Complaint Dispute Set Up via Complaints Disputes Mgmt
 
     Given I am the Import Complaints Disputes page
-    And I click <ComplaintsDisputesMgmt> tab
+    And I mouseover on Complaints Disputes Mgmt
     When I click Complaint Dispute Set Up
     Then I should see Add Edit Template page under Complaint Dispute Set Up
-    Examples:
-      | ComplaintsDisputesMgmt  |
-      | Complaints/Disputes Mgmt|
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Classify Step one Attribute via Complaints Disputes Mgmt
 
     Given I am on Complaint Dispute Log Setup page
     When I click Classify Step one Attribute
     Then I should see Classify Step one Attribute page
 
-  @Smoke
+  @NavSmoke
   Scenario: Validating Ccp Attribute via Complaints Disputes Mgmt
 
     Given I am on Classify Step one Attribute page
@@ -1192,7 +1189,7 @@ Feature: Validating IPACS ICM Functionality
 
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Master List-Vendors Link
 
     Given I am on IPACS Home Page
@@ -1202,7 +1199,7 @@ Feature: Validating IPACS ICM Functionality
       | MasterListVendors    |
       | Master List - Vendors|
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating  View Master List via Master List-Vendors
 
     Given I click <MasterListVendors> tab
@@ -1212,7 +1209,7 @@ Feature: Validating IPACS ICM Functionality
       | MasterListVendors    |
       | Master List - Vendors|
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating Add Vendor via Master List-Vendors
 
     Given I am on the Master List-Vendor page
@@ -1223,7 +1220,7 @@ Feature: Validating IPACS ICM Functionality
       | MasterListVendors    |
       | Master List - Vendors|
 
-  @Smoke
+  @NavSmoke
   Scenario Outline:  Validating Add Vendor Category via Master List-Vendors
 
     Given I am on the Add Vendor page
@@ -1239,7 +1236,7 @@ Feature: Validating IPACS ICM Functionality
 
 
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating BCP Management Link
 
     Given I am on IPACS Home Page
@@ -1249,7 +1246,7 @@ Feature: Validating IPACS ICM Functionality
       | BCPManagements  |
       | BCP Management  |
 
-  @Smoke
+  @NavSmoke
   Scenario Outline: Validating View_Master List via BCP Management
 
     Given I click <BCPManagements> tab

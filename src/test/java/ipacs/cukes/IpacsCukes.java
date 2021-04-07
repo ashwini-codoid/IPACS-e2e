@@ -14,7 +14,7 @@ import java.io.File;
 
 @CucumberOptions(features = {"src/test/resources/features/ipacs/smoke"},
         monochrome = true,
-        tags = {"@Smoke"},
+        tags = {"@NavSmoke"},
         glue = {"ipacs"},
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:",
                 "pretty", "html:target/cucumber-report/",

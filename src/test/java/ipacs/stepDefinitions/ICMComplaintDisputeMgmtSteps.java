@@ -147,6 +147,11 @@ public class ICMComplaintDisputeMgmtSteps {
         ipacsPageContainer.icmComplaintDisputeMgmtPage.clickComplaintDisputeLogSetUp();
     }
 
+    @When("^I mouseover on Complaints Disputes Mgmt$")
+    public void iMouseoverOnComplaintsDisputesMgmt() {
+        ipacsPageContainer.icmComplaintDisputeMgmtPage.clickComplaintsDisputesMgmtSectionICM();
+    }
+
     @Then("^I should see Add Edit Template page under Complaint Dispute Set Up$")
     public void iShouldSeeAddEditTemplatePageUnderComplaintDisputeSetUp() {
         Assert.assertTrue(ipacsPageContainer.icmComplaintDisputeMgmtPage.verifyComplaintDisputeLogSetUp());
